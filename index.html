@@ -1,0 +1,62 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="registration form" content="This is a basic registration form to practice simple HTML">
+    <title> My Registration Form</title>
+    <style>
+    form{
+      font-family: sans-serif;
+    }
+    input{
+      border: 2px solid black;
+    }
+    label input{
+      width: 118px;
+    }
+    #submitBtn{
+      border: 1px solid black;
+      box-shadow: 2px 2px 1px;
+    }
+    #faveLang {
+      width:80px;
+      border: 1px solid black;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <form >
+      <h1> My Registration Form </h1> <br>
+      <label> First Name: <input type="text" name="firstName" style=" margin-left: 20px"> </label>   <br> <br>
+      <label> Last Name: <input type="text" name="lastName" style=" margin-left: 21px"> </label>  <br> <br>
+      <label> Email: <input type="password" name="password" style="margin-left: 57px"> </label>  <br> <br>
+      <label> PW Confirm: <input type="password" name="pwConfirm" style="margin-left: 10px"> </label>  <br> <br>
+      <label> Birthday: <input type="date" name="birthday" placeholder="mm/dd/yyyy" style="margin-left: 38px" > </label>
+      <img src="http://i1070.photobucket.com/albums/u483/meganvieno/Logomakr_1VeJca_zpsjelgpboc.png" style="width: 20px; height: 20px; vertical-align: middle" alt="calendar image" /><br> <br>
+
+      <!--gender-->
+      <input type="radio" id="male" name="gender"> <label for="male">Male</label>
+      <input type="radio" id="male" name="gender"> <label for="male">Female</label>
+      <input type="radio" id="male" name="gender"> <label for="male">Other</label>
+
+      <!--personal description-->
+      <p> A short description about yourself:</p>
+      <input type="textarea" style="height: 80px; width: 225px">  <br> <br>
+
+      <!--Language choice dropdown-->
+      <label for="faveLang">Favorite Language:</label>
+      <select name="faveLang" id="faveLang" style="width:80px;">
+        <option value="Javascript"> Javascript</option>
+        <option value="C#">C#</option>
+        <option value="Python">Python</option>
+        <option value="BASIC">BASIC</option>
+        <option value="Ruby">Ruby</option>
+      </select> <br><br>
+
+      <input type="submit" id="submitBtn" value="Submit">
+
+    </form>
+  </body>
+</html>
